@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chat Application</title>
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1>Sandesh</h1>
+      </header>
+      <div class="chat-box" id="chat-box"></div>
+      <div class="chat-form-container">
+        <form id="chat-form">
+          <textarea
+            type="textarea"
+            class="no-resize"
+            id="textarea"
+            rows="1"
+            placeholder="Enter message"
+            required
+            autocomplete="off"
+          ></textarea>
+          <button class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
